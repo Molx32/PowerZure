@@ -206,7 +206,7 @@ function Get-Resources
     Lists all resources
 #>
 
-        az resource list --query '[].{Name:name,RG:resourceGroup,Location:location}' -o table
+        az resource list --query '[].{Name:name,RG:resourceGroup,Type:type,Location:location}' -o table
 }
 
 function Get-AllUsers 
